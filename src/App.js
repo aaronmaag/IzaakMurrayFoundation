@@ -7,9 +7,10 @@ import Vision from "./pages/Vision";
 import Organization from "./pages/Organization";
 import Sponsorship from "./pages/Sponsorship";
 import Testimonials from "./pages/Testimonials";
-import Donation from "./pages/Donation";
 import Events from "./pages/Events";
 import Contact from "./pages/Contact";
+import Donate from "./pages/Donate";
+
 
 const App = () => {
   return (
@@ -23,10 +24,12 @@ const App = () => {
           <Route path="/organization" element={<Organization />} />
           <Route path="/sponsorship" element={<Sponsorship />} />
           <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/donation" element={<Donation />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<h1>Contact Page</h1>} />
+          <Route path="/donate" element={<h1>Donation Page</h1>} />
         </Routes>
+        <Donate />
+        <Contact />
       </div>
     </Router>
   );
