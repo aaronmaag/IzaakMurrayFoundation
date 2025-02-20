@@ -1,0 +1,20 @@
+.donate-button {
+    position: fixed;
+    top: 10px;
+    right: 35px;  
+    background-color: #44ba95; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.donate-button:hover {
+    background-color: #58cec4; /* Darker blue */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}

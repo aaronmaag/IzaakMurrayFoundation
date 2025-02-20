@@ -1,13 +1,15 @@
-// Contact.js
-import React from 'react';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./Contact.css"; 
 
-const About = () => {
+const Contact = () => {
+    const navigate = useNavigate();
+
     return (
-        <div className="section" id="contact">
-            <p>Contact us:...
-            </p>
-        </div>
+        <button className="contact-button" onClick={() => navigate("/contact")}>
+            Contact Us
+        </button>
     );
 };
 
-export default About;
+export default Contact;
